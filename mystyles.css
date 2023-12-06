@@ -1,8 +1,14 @@
-div {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body
+{
+	background: #000000;
+	width: 100%;
+	height: 100%;
 
 }
 
@@ -13,6 +19,12 @@ p {
   margin-left: 80px;
   border: 2px 
   
+}
+
+p {
+  font-family: "Georgia", serif;
+  font-size: 25px;
+  color: #BCD4DE;
 }
 
 h2 {
@@ -30,71 +42,56 @@ h2 {
     font-family: "Georgia", serif;
   }
 
-body {
-    background-color:#FBFBF2
-
-}
-
-p {
-    font-family: "Georgia", serif;
-    font-size: 25px;
-    color: #BCD4DE;
-}
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #333;
   
   }
 
-  li {
-    float: left;
+ol {
+	color: #BCD4DE;
+	font-size: 25px;
+}
+
+li {
+  float: left;
+  color: #BCD4DE;
   
-  }
+}
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 24px 26px;
-    text-decoration: none;
-    font-size: 25px;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 25px;
   
-  }
+}
   
  
-  li a:hover {
-    background-color: #111;
-  }
+li a:hover {
+  background-color: #111;
+}
 
-  .active {
-    background-color: #026FC1;
-  }
+.active {
+  background-color: #026FC1;
+}
 
-  .centervideo {
+.centervideo {
 
-    display: block;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
     
-    margin-left: auto;
-    
-    margin-right: auto;
-    
-    }
+}
 
 body, html {
     height: 100%;
   }
 
-.bg {
-  
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 #slider {
 	overflow: hidden;
@@ -110,7 +107,7 @@ body, html {
 	100% { left: 0; }
 }
 #slider figure {
-	width:250%;
+	width:300%;
 	position: relative;
 	animation: 9s slider infinite;
 }
@@ -125,18 +122,7 @@ body, html {
 }
 
 
-*
-{
-	padding: 0px;
-	margin: 0px;
-}
 
-html, body
-{
-	background: #000000;
-	width: 100%;
-	height: 100%;
-}
 
 #wrap
 {
@@ -365,3 +351,80 @@ box-shadow: 0 0 250px 20px #42F2A1;
 
 to { box-shadow: 0 0 100px 15px #F4F6AD; }
 }
+
+
+footer {
+  font-size: 20;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/*table decorations*/
+
+.centertable {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+#albums {
+  font-family: Georgia;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  
+}
+
+
+#albums td, #albums th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #BCD4DE;
+}
+
+#albums tr:nth-child(even){background-color: #f2f2f2;}
+
+#albums tr:hover {background-color: #ddd;}
+
+#albums th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #0075C4;
+  color: white;
+}
+
+
+.image {
+	float: center;
+}
+
+
+.center {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+.link {
+	text-decoration: none;
+	
+}
+
+.button {
+	border: none;
+	color: #0075C4;
+	background-color:#BCD4DE;
+	padding: 16px 32px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+  }
+
